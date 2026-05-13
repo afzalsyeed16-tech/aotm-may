@@ -42,13 +42,13 @@ font-weight: bolder;
 
 #gifvideo{
  width: 100%;
- height:1000px;
+ height:850px;
  
 }
 
 #gifvideo video{  
 width: 100%;
-height:1000px;
+height:850px;
 object-fit: cover;
 }
 
