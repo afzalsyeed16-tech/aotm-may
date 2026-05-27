@@ -502,7 +502,6 @@ margin-top: 40px;
 
 @media screen and (max-width:480px){
 
-/* NAVBAR */
 
 .navbar{
     display: flex;
@@ -528,7 +527,6 @@ margin-top: 40px;
     font-size: 14px;
 }
 
-/* BUTTON */
 
 #button{
     padding: 10px 20px;
@@ -536,7 +534,6 @@ margin-top: 40px;
     border-radius: 30px;
 }
 
-/* HERO SECTION */
 
 #hero{
     height: 500px;
@@ -570,7 +567,6 @@ margin-top: 40px;
     font-size: 14px;
 }
 
-/* ABOUT SECTION */
 
 #about{
     padding: 20px;
@@ -584,8 +580,6 @@ margin-top: 40px;
 #about p{
     font-size: 14px;
 }
-
-/* WHY ARENA */
 
 #why-arena{
     display: flex;
@@ -612,7 +606,6 @@ margin-top: 40px;
     text-align: center;
 }
 
-/* COURSES */
 
 #courses{
     padding: 40px 15px;
@@ -627,7 +620,6 @@ margin-top: 40px;
     font-size: 16px;
 }
 
-/* COURSE CARDS */
 
 #coursess{
     display: flex;
