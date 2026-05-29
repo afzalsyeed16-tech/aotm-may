@@ -1,19 +1,14 @@
-#tophead{
-background: #021b4e;
-border: 1px solid black;    
-color: white;
-}
-
 
 .navbar{
-    display: flex;
-    flex-wrap: wrap;
-    gap:99px;
-    font-size: 13px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-left: 50px;
-    align-items: center;
-    
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    height: 60px;
+    font-size:13px;
+    background: #021b4e;
+    color:white;
+    font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
 }
 
 .logostyle{
@@ -24,10 +19,39 @@ color: white;
 }
 
 .iconstyle{
+    display: none;
     height:25px;
     width: 2%;
     margin-top:4px;
     
+}
+
+#menu-toggle{
+    display:none;
+}
+
+.hamburger{
+    display:none;
+    flex-direction:column;
+    gap:5px;
+    cursor:pointer;
+    z-index: 9999;
+    position: relative;
+}
+
+.hamburger span{
+    width:28px;
+    height:3px;
+    background:white;
+    border-radius:5px;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:85px;
+    margin-left: 80px;
+
 }
 
 #button{
@@ -136,10 +160,12 @@ section .air.air4{
 
 #mainimg{
 
-width:910px;
+width:60%;
+max-width: 850px;
+height: auto;
 position: absolute;
-right:0px;
-top:180px;
+right: 0px;
+top:210px;
 
 }
 
@@ -153,7 +179,7 @@ top:180px;
 
 #about-title h2{
     font-size: 52px;
-    color: #d9b70b;
+    color: #000000;
     margin-top: 50px;
     margin-bottom: 40px;
 }
@@ -199,6 +225,7 @@ top:180px;
 }
 
 .about-text p{
+    width: 90%;
     font-size: 17px;
     color: #555;
     margin-bottom: 20px;
@@ -360,13 +387,14 @@ flex-wrap: wrap;
 font-size: 40px;
 font-weight: bolder;
 font-family: poppins, sans-serif;
-color: rgb(218, 218, 23);
+color: rgb(0, 0, 0);
 
 }
 #courses h3{
 display: flex;
 flex-wrap: wrap;
 font-size: 30px;
+color:#555;
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
@@ -502,141 +530,293 @@ margin-top: 40px;
 
 @media screen and (max-width:480px){
 
-
 .navbar{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-
-    padding: 15px;
-    text-align: center;
-}
-
-.logostyle{
-    width: 110px;
-    height: auto;
-}
-
-.iconstyle{
-    width: 24px;
-    height: 24px;
+    position: relative;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px;
+    margin-left:0;
+    gap:10px;
+    width: auto;
 }
 
 .navbar h3{
-    font-size: 14px;
+
+font-size: 15px;    
+
+}
+
+.logostyle{
+    width:70px;
+    height:auto;
+    margin-left:0;
+}
+
+.iconstyle{
+    display:block;
+    width: 22px;
+    height: 22px;
+    margin-top: 0px;
+}
+
+.hamburger{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    margin-right: 20px;
+    
+}
+
+.hamburger span{
+    width:30px;
+    height:4px;
+    background:white;
+    border-radius:10px;
+}
+
+.nav-links{
+    display:none;
+    position:absolute;
+    top:70px;
+    right: 15px;
+    width:220px;
+    background:#021b4e;
+    flex-direction:column;
+    text-align:center;
+    padding:25px;
+    z-index: 9999;
+    margin-top: 10px;
+}
+
+#menu-toggle:checked ~ .nav-links{
+    display:flex;
 }
 
 
-#button{
-    padding: 10px 20px;
-    font-size: 13px;
-    border-radius: 30px;
-}
-
-
-#hero{
-    height: 500px;
+section{
+    height:601px;
+    width: auto;
 }
 
 #text{
-    top: 140px;
-    left: 20px;
+    position:absolute;
+    top:100px;
+    left:0;
+    width:100%;
+    padding:15px;
+    text-align:center;
+    z-index:2;
+    box-sizing:border-box;
 }
 
 #text h1{
-    font-size: 32px;
-    width: 300px;
+    width:100%;
+    font-size:28px;
+
 }
 
 #text p{
-    font-size: 15px;
-    width: 280px;
-    margin-top: 15px;
+    width:100%;
+    font-size:15px;
 }
 
 #text button{
-    width: 170px;
-    height: 45px;
+    width:160px;
+    height:43px;
+    font-size:16px;
+}
 
-    margin-top: 25px;
+#mainimg{
+    width:100%;
+    height:auto;
+    position:absolute;
+    top:360px;
+    left:50%;
+    transform:translateX(-50%);
+}
 
-    border: none;
-    border-radius: 30px;
 
-    font-size: 14px;
+
+#about-title h2{
+    font-size:32px;
+    align-items: center;
+    margin-top: 12px;
+}
+
+#about-title p{
+    font-size:14px;
+    text-align: center;
 }
 
 
 #about{
-    padding: 20px;
-    text-align: center;
-}
-
-#about h2{
-    font-size: 24px;
-}
-
-#about p{
-    font-size: 14px;
-}
-
-#why-arena{
     display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    gap:15px;
+    padding:30px 10px;
+}
+
+.about-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    
+}
+
+.about-text{
+    display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
+    width:100%;
+    margin: auto;
+    
+}
 
-    padding: 20px;
+.about-text h1{
+margin-top: 15px;
+font-size:32px;
+}
+
+.about-text p{
+    margin-top: 8px;
+    font-size:16px;
+}
+
+.about,.points{
+
+margin-top: 10px;
+
 }
 
 .gif4style{
-    width: 100%;
+    width: 90%;
+    max-width: 350px;
     height: auto;
+    margin:auto;
 }
 
-#why-arena h2{
-    font-size: 24px;
-    margin-top: 20px;
-    text-align: center;
+#stats-section{
+height: auto;
+padding:30px 15px;
+
 }
 
-#why-arena p{
-    width: 100%;
-    font-size: 14px;
-    text-align: center;
+.stats-boxes{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+    margin-top:40px;
 }
 
+.top-content{
+    flex-direction:column;
+    gap:20px;
+   
+}
+
+.left-text,
+.right-text{
+    width:100%;
+    text-align:center;
+}
+
+.left-text h1{
+    font-size:28px;
+}
+
+.right-text p{
+    font-size:16px;
+}
+
+.box{
+    width:90%;
+    padding: 10px;
+    
+    
+}
+
+.box h2{
+    font-size:32px;
+}
+
+.box p{
+    font-size:16px;
+}
+
+
+
+#industry{
+    flex-direction:column;
+    padding:20px;
+}
+
+.left{
+    width:100%;
+    text-align:center;
+}
+
+.left h1{
+    font-size:32px;
+    margin-bottom: 30px;
+}
+
+.left p{
+    font-size:16px;
+    margin-bottom: 20px;
+}
+
+
+.right{
+    flex-direction:column;
+    align-items:center;
+}
+
+.card{
+    width:95%;
+    
+}
 
 #courses{
-    padding: 40px 15px;
-    text-align: center;
+
+margin-top:80px;    
+
 }
 
 #courses h2{
-    font-size: 24px;
+    font-size:26px;
+    text-align:center;
 }
 
 #courses h3{
-    font-size: 16px;
-}
-
-
-#coursess{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    gap: 20px;
+    font-size:18px;
 }
 
 .our-courses{
-    width: 90%;
-    padding: 15px;
+    width:80%;
+    height:auto;
 }
 
-.courseimg{
-    width: 100%;
-    border-radius: 15px;
+
+
+.footer-box{
+    flex-direction:column;
+    text-align:center;
+   
+}
+
+.footer-about{
+    width:100%;
+}
+
+.footer-bottom{
+    
+margin-bottom: 5px;
 }
 
 }
