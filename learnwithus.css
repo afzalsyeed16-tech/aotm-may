@@ -80,6 +80,19 @@ color:rgb(0, 0, 0);
 font-weight: bolder;
 }
 
+#button:hover{
+background: white;
+color: black;
+transition: 0.25s;
+}
+
+
+#learn-text button:hover{
+background: white;
+color: black;
+transition: 0.25s;
+}
+
 #learn-section{
     height:100vh;
     background-image:url("images/learnwithus.jpeg");
@@ -126,7 +139,7 @@ font-weight: bolder;
 
 #learnwithus h2{
  text-align:center;
- color:#0840b8;
+ color:#021b4e;
  font-family: poppins, sans-serif;
  font-weight: 700;
  font-size: 40px;
@@ -166,15 +179,15 @@ object-fit:contain;
 margin-bottom:15px;
 }
 
-.training-card h3{
+#learnwithus .training-card h3{
 font-family: poppins, sans-serif;
-color:#0840b8;
+color:#d6a400;
 margin-bottom:10px;
 
 }
 
 .training-card p{
-color:#555;
+color:gray;
 font-size:14px;
 margin-bottom:15px;
 }
@@ -187,7 +200,7 @@ margin-bottom:15px;
 
 #whylearnwithus h2{
  text-align:center;
- color:#0840b8;
+ color:#021b4e;
  font-family: poppins, sans-serif;
  font-weight: 700;
  font-size: 40px;
@@ -227,15 +240,15 @@ object-fit:contain;
 margin-bottom:15px;
 }
 
-.learning-card h3{
+#whylearnwithus .learning-card h3{
 font-family: poppins, sans-serif;
-color:#0840b8;
+color:#d6a400;
 margin-bottom:10px;
 
 }
 
 .learning-card p{
-color:#555;
+color:gray;
 font-size:14px;
 margin-bottom:15px;
 }
@@ -367,7 +380,7 @@ margin-bottom:15px;
 
 #learn-text h1{
     width:100%;
-    font-size:38px;
+    font-size:45px;
 }
 
 #learn-text p{
@@ -377,9 +390,9 @@ margin-bottom:15px;
 }
 
 #learn-text button{
-    width:180px;
+    width:190px;
     height:45px;
-    font-size:15px;
+    font-size:16px;
 }
 
 #learnwithus{

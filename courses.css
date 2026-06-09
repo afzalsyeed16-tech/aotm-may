@@ -80,6 +80,18 @@ color:rgb(0, 0, 0);
 font-weight: bolder;
 }
 
+#button:hover{
+background: white;
+color: black;
+transition: 0.25s;
+}
+
+#course-text button:hover{
+background: white;
+color: black;
+transition: 0.25s;
+}
+
 #course-section{
     height:100vh;
     background-image:url("images/courses-page-img.PNG");
@@ -127,7 +139,7 @@ font-weight: bolder;
 
 #pop-courses h2{
  text-align:center;
- color:#0840b8;
+ color:#021b4e;
  font-family: poppins, sans-serif;
  font-weight: 700;
  font-size: 40px;
@@ -198,7 +210,7 @@ background: linear-gradient(45deg, #0b2e7b, #064ce4);
 
 #student-work h2{
  text-align:center;
- color:#0840b8;
+ color:#021b4e;
  font-family: poppins, sans-serif;
  font-weight: 700;
  font-size: 40px;
@@ -249,6 +261,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 border-radius: 15px;
+margin-top: -50px;
 }
 
 .cta-left{
@@ -432,7 +445,7 @@ font-weight: 600;
 }
 
 #course-text h1{
-    font-size:35px;
+    font-size:45px;
     width:100%;
 }
 
@@ -443,9 +456,9 @@ font-weight: 600;
 }
 
 #course-text button{
-    width:170px;
-    height:42px;
-    font-size:15px;
+    width:190px;
+    height:45px;
+    font-size:16px;
 }
 
 #pop-courses h2{
